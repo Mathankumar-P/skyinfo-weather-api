@@ -13,7 +13,7 @@ public class RealtimeWeatherDTO {
     private int precipitation;
     @JsonProperty("wind_speed")
     private int windSpeed;
-    @Column(length = 50)
+
     private String status;
 
     private Date lastUpdated;
@@ -68,5 +68,11 @@ public class RealtimeWeatherDTO {
         this.lastUpdated = lastUpdated;
     }
 
+    public String getLocation() {
+        return location;
+    }
 
+    public void setLocation(String location) {
+        this.location = location;
+    }
 }
